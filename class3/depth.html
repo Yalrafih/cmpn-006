@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+	<title>Depth</title>
+
+	<meta charset="utf-8" />
+
+	<style type="text/css">
+		.first {
+			background-color: silver;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+
+		.second {
+			background-color: moccasin;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left: 20px;
+			top: -80px;
+			z-index: 2;
+		}
+
+		.third {
+			background-color: khaki;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left: 40px;
+			top: -160px;
+			z-index: 3;
+		}
+
+		#wrapper {
+			width: 500px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="first">First</div>
+		<div class="second">Second</div>
+		<div class="third">Third</div>
+	</div>
+</body>
+
+</html>

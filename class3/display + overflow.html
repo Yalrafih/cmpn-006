@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Display</title>
+
+	<style type="text/css">
+		* {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+		#pageWrapper {
+			width: 948px;
+			margin: 20px auto;
+		}
+
+		#content {
+			width: 650px;
+			height: 200px;
+			display: block;
+			visibility: visible;
+			/*
+		overflow:hidden;
+		*/
+			overflow-y: visible;
+			background-color: #d0dce2;
+			border: 1px solid black;
+		}
+
+		#textOverflow {
+			width: 12em;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		#flexContainer {
+			width: 400px;
+			height: 150px;
+			border: 1px solid #c3c3c3;
+			display: flex;
+		}
+
+		#flexContainer div {
+			width: 70px;
+			height: 70px;
+		}
+
+		div#myRedDIV {
+			order: 2;
+		}
+
+		div#myBlueDIV {
+			order: 4;
+		}
+
+		div#myGreenDIV {
+			order: 3;
+		}
+
+		div#myPinkDIV {
+			order: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="pageWrapper">
+		<div id="content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo tellus lacus, non ultrices augue mattis sed. Proin tincidunt viverra arcu, sit amet maximus neque imperdiet ac. Fusce vel dui odio. Duis vel arcu odio. Curabitur rutrum, turpis sed tempus
+			blandit, enim ipsum egestas libero, eu condimentum quam elit a sem. Quisque urna leo, rhoncus ut tincidunt eu, fermentum tempus enim. Etiam in orci ut nisl interdum convallis. Sed elementum risus nec mi sollicitudin dapibus. Mauris id nisl ut ante
+			rhoncus iaculis. Phasellus finibus elementum nisi, eget aliquam leo pulvinar id. Ut quis ornare nisi, non convallis arcu. Quisque fringilla massa non ex vestibulum, ut aliquam diam condimentum. Morbi egestas, risus nec vehicula ornare, nunc turpis
+			egestas nisi, euismod aliquam nisl dui non ipsum. Aenean tempus libero ante, vel tincidunt ante imperdiet finibus. Duis convallis enim ut sapien molestie dignissim. In convallis sem enim, quis posuere sem bibendum ac. Morbi vitae euismod nulla, fringilla
+			malesuada sapien. Morbi ante nunc, posuere eget facilisis in, tincidunt et urna. Aenean sed ex purus. Vivamus consequat id libero vitae scelerisque. Phasellus eget tellus sit amet dui sagittis faucibus. Curabitur eu lorem nec tortor dapibus lacinia
+			at ac magna.
+		</div>
+
+		<br><br>
+		<div id="textOverflow">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		</div>
+
+		<br><br>
+		<div id="flexContainer">
+			<div style="background-color:coral;" id="myRedDIV"></div>
+			<div style="background-color:lightblue;" id="myBlueDIV"></div>
+			<div style="background-color:lightgreen;" id="myGreenDIV"></div>
+			<div style="background-color:pink;" id="myPinkDIV"></div>
+		</div>
+	</div>
+</body>
+
+</html>

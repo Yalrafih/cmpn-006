@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS Dropdown Menu</title>
+
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+
+	#wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	header {
+		height: 100px;
+		background: blue;
+	}
+
+	nav {
+	height: 30px;
+		background: orange;
+	}
+
+	p {
+		padding: 0 0 30px 0;
+	}
+
+	/************************************
+		MENU CSS
+	************************************/
+
+	#dropdown {
+		list-style: none; /* No bullets on outer list */
+		font-weight: bold;
+	}
+
+	#dropdown li {
+		margin: 0 5px 0 0; /* Spacing between menus. Set to zero to have menu items side by side */
+		float: left;
+	}
+
+	#dropdown li:hover ul {
+		display: block; /* When the mouse is hovering over the list item, we show the drop down menu. */
+		border-color: black;
+		border-style: outset;
+		border-width: 2px 4px 4px 2px;
+	}
+
+	#dropdown li:hover a {
+		background: blue;
+	}
+
+	#dropdown li a:hover {
+		background: red;
+	}
+
+	#dropdown a {
+		display: block;
+		padding: 5px 15px;
+		color: white;
+		background-color: black;
+		font-family: sans-serif;
+		text-decoration: none;
+	}
+
+	#dropdown ul {
+		display: none;
+		position: absolute;
+		list-style: none;
+	}
+
+	#dropdown ul li {
+		float: none; /* Try without float property. */
+		margin: 0;
+	}
+
+	#dropdown ul a {
+		white-space: nowrap; /* Keeps longer text from wrapping. */
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Header here</h1>
+		</header>
+
+		<nav id="navbar">
+			<ul id="dropdown">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+
+				<li>
+					<a href="#">About</a>
+
+					<ul>
+						<li><a href="company.html">Our Company</a></li>
+						<li><a href="team.html">Meet the Team</a></li>
+						<li><a href="investor.html">Investor Information</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#">Products</a>
+
+					<ul>
+						<li><a href="bikes.html">Bicycles</a></li>
+						<li><a href="canoes">Canoes</a></li>
+						<li><a href="fishing.html">Fishing Accessories</a></li>
+						<li><a href="longboards.html">Longboards</a></li>
+						<li><a href="skateboards.html">Skateboards</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<article>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+	</div>
+</body>
+
+</html>
