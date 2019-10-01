@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Sprites</title>
+    <style type="text/css">
+        ul.menu {
+            list-style-type: none;
+        }
+
+        ul.menu li {
+            height: 50px;
+			width: 50px;
+            color: #3E789F;
+            background: url("mySprite.png") no-repeat;
+            /* As all link share the same background-image */
+        }
+
+        ul.menu li.firefox {
+            background-position: 0 0;
+        }
+
+        ul.menu li.chrome {
+            background-position: 0 -100px;
+        }
+
+        ul.menu li.ie {
+            background-position: 0 -200px;
+        }
+
+        ul.menu li.safari {
+            background-position: 0 -300px;
+        }
+
+        ul.menu li.opera {
+            background-position: 0 -400px;
+        }
+
+        ul.menu li.firefox:hover {
+            background-position: 0 -50px;
+        }
+
+        ul.menu li.chrome:hover {
+            background-position: 0 -150px;
+        }
+
+        ul.menu li.ie:hover {
+            background-position: 0 -250px;
+        }
+
+        ul.menu li.safari:hover {
+            background-position: 0 -350px;
+        }
+
+        ul.menu li.opera:hover {
+            background-position: 0 -450px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li class="firefox"></li>
+        <li class="chrome"></li>
+        <li class="ie"></li>
+        <li class="opera"></li>
+        <li class="safari"></li>
+    </ul>
+</body>
+
+</html>

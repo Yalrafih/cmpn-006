@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+	<title>Tables</title>
+	
+	<meta charset="utf-8" />
+	
+	<style type="text/css">
+	#firsttable {
+		width: 100%;
+		border: 2px solid black;
+		empty-cells: hide;
+		background-color: #ccc;
+		caption-side: bottom;
+		table-layout: fixed;
+		border-spacing: 10px 5px;
+	}
+	
+	#firsttable td {
+		border: 1px solid black;
+		padding: 5px;
+		background-color: #99f;
+	}
+	
+	#secondtable {
+		width: 100%;
+		border: 1px solid black;
+		border-collapse: collapse;
+		empty-cells: hide;
+		background-color: #ccc;
+		table-layout: auto;
+	}
+	
+	#secondtable td {
+		border: 1px solid black;
+		padding: 5px;
+		background-color: #99f;
+	}
+	
+	#wrapper {
+		width: 50%;
+		margin: 0 auto;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<table id="firsttable">
+			<caption>Caption for this Table</caption>
+			<tr>
+				<th>#</th>
+				<th>Text</th>
+				<th>etc.</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Some data in this cell</td>
+				<td>Data</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Some data in this cell</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Some data in this cell</td>
+				<td>Data</td>
+			</tr>
+		</table>
+		
+		<br />
+		<br />
+		<br />
+		
+		<table id="secondtable">
+			<caption>Caption for this Table</caption>
+			<tr>
+				<th>#</th>
+				<th>Text</th>
+				<th>etc.</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Some data in this cell</td>
+				<td>Data</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Some data in this cell</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Some data in this cell</td>
+				<td>Data</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
