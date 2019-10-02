@@ -5,9 +5,11 @@
 
 	<style type="text/css">
 		body {
-			background-image: url('bodyimage.jpg');
+			color: #fff;
+			background-image: url('body.jpg');
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+			background-size: cover;
 			/* scroll (default) */
 		}
 
@@ -22,20 +24,12 @@
 
 		.bgOrigin {
 			padding: 50px;
-			border: 5px dotted #000000;
+			border: 20px dotted #fff;
 			background-image: url('divimage.jpg');
 			background-origin: border-box;
 			background-clip: padding-box;
 			background-repeat: no-repeat;
 			background-position: 20px 20px;
-		}
-
-		.bgSize {
-			border: 1px solid #000000;
-			height: 300px;
-			background-image: url('smiley.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
 		}
 
 		.divimage {
@@ -48,13 +42,9 @@
 </head>
 
 <body>
-	<div class="bgClip">background-clip</div>
-	<br/><br/>
 	<div class="bgOrigin">background-origin</div>
 	<br/><br/>
-	<div class="bgSize">background-size</div>
-	<br/><br/>
-	<div class="divimage">
+	<div>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
 			in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
