@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+	<title>Animation</title>
+
+	<meta charset="utf-8" />
+
+	<style type="text/css">
+		/* General Styles*/
+
+		#wrapper {
+			background-color: #ddd;
+			width: 58%;
+			margin: 0 auto;
+			padding: 1% 1%;
+			box-shadow: 3px 3px 6px black;
+		}
+		/* End of General Styles*/
+
+		#prop {
+			top: 0;
+			left: -180px;
+			position: relative;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-name: propeller;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			animation-duration: 1s;
+			animation-name: propeller;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		#prop:hover {
+			/* paused or running are the two available values */
+			-webkit-animation-play-state: paused;
+			-moz-animation-play-state: paused;
+			-o-animation-play-state: paused;
+			animation-play-state: paused;
+		}
+
+		@-webkit-keyframes propeller {
+			from {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes propeller {
+			from {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="airplane.png" alt="Airplane Graphic" />
+			<img src="prop.png" alt="Spinning Propeller" id="prop" />
+		</header>
+	</div>
+</body>
+
+</html>

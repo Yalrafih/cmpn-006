@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+	<title>Linear Gradients</title>
+
+	<style type="text/css">
+		div {
+			width: 50%;
+		}
+
+		.lingrad {
+			height: 100px;
+			/* IE10 supports gradients, no browser extention for IE 5.5 till IE9.
+		Internet Explorer 5.5 through 9.0 supports proprietary filter: progid:DXImageTransform.Microsoft.Gradient() filter.
+		*/
+			background: -o-linear-gradient(bottom, red, orange, yellow, green, blue, indigo, violet);
+			background: -moz-linear-gradient(bottom, red, orange, yellow, green, blue, indigo, violet);
+			background: -webkit-linear-gradient(bottom, red, orange, yellow, green, blue, indigo, violet);
+			background: linear-gradient(to top, red, orange, yellow, green, blue, indigo, violet);
+		}
+
+		.lingradangle {
+			height: 100px;
+			/* IE10 supports gradients, no browser extention for IE 5.5 till IE9.
+		Internet Explorer 5.5 through 9.0 supports proprietary filter: progid:DXImageTransform.Microsoft.Gradient() filter.
+		*/
+			background: -o-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+			background: -moz-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+			background: -webkit-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+			background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+		}
+
+		.lingradstart {
+			height: 100px;
+			/* IE10 supports gradients, no browser extention for IE 5.5 till IE9.
+		Internet Explorer 5.5 through 9.0 supports proprietary filter: progid:DXImageTransform.Microsoft.Gradient() filter.
+		*/
+			background: -o-linear-gradient(45deg, green, green 60%, red, yellow);
+			background: -moz-linear-gradient(45deg, green, green 60%, red, yellow);
+			background: -webkit-linear-gradient(45deg, green, green 60%, red, yellow);
+			background: linear-gradient(45deg, green, green 60%, red, yellow);
+		}
+
+		.lingradpercent {
+			height: 100px;
+			/* IE10 supports gradients, no browser extention for IE 5.5 till IE9.
+		Internet Explorer 5.5 through 9.0 supports proprietary filter: progid:DXImageTransform.Microsoft.Gradient() filter.
+		*/
+			background: -o-linear-gradient(45deg, green, green 60%, red, yellow);
+			background: -moz-linear-gradient(45deg, green, green 60%, red, yellow);
+			background: -webkit-linear-gradient(45deg, green, green 60%, red, yellow);
+			background: linear-gradient(45deg, green, red 40%, yellow 50%, blue 60%);
+			/* color stops*/
+		}
+
+		.lingradrepeat {
+			height: 300px;
+			/* IE10 supports gradients, no browser extention for IE 5.5 till IE9.
+		Internet Explorer 5.5 through 9.0 supports proprietary filter: progid:DXImageTransform.Microsoft.Gradient() filter.
+		*/
+			background: -webkit-repeating-linear-gradient(red, yellow, green 20%);
+			background: -o-repeating-linear-gradient(red, yellow, green 20%);
+			background: -moz-repeating-linear-gradient(red, yellow, green 20%);
+			background: repeating-linear-gradient(red, yellow, green 20%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="lingrad">Linear gradient</div>
+	<br><br>
+	<div class="lingradangle">Linear gradient Angle</div>
+	<br><br>
+	<div class="lingradstart">Linear gradient Start</div>
+	<br><br>
+	<div class="lingradpercent">Linear gradient Percent</div>
+	<br><br>
+	<div class="lingradrepeat">Linear gradient Repeat</div>
+</body>
+
+</html>

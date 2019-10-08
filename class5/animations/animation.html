@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		#wrapper {
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			border: 1px solid black;
+		}
+
+		#animated {
+			position: relative;
+			width: 20px;
+			height: 20px;
+			background-color: blue;
+			box-shadow: 2px 2px 3px black;
+			-webkit-animation-name: example;
+			/* Chrome, Safari */
+			-webkit-animation-duration: 4s;
+			/* Chrome, Safari */
+			-webkit-animation-iteration-count: infinite;
+			/* Chrome, Safari */
+			animation-name: example;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		/* Chrome, Safari */
+
+		@-webkit-keyframes example {
+			0% {
+				left: 0px;
+				top: 0px;
+			}
+			25% {
+				left: 280px;
+				top: 0px;
+			}
+			50% {
+				left: 280px;
+				top: 280px;
+			}
+			75% {
+				left: 0px;
+				top: 280px;
+			}
+			100% {
+				left: 0px;
+				top: 0px;
+			}
+		}
+		/* Standard syntax */
+
+		@keyframes example {
+			0% {
+				left: 0px;
+				top: 0px;
+			}
+			25% {
+				left: 280px;
+				top: 0px;
+			}
+			50% {
+				left: 280px;
+				top: 280px;
+			}
+			75% {
+				left: 0px;
+				top: 280px;
+			}
+			100% {
+				left: 0px;
+				top: 0px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="animated"></div>
+	</div>
+</body>
+
+</html>
