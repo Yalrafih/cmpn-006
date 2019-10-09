@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+	<title>Transitions</title>
+
+	<meta charset="utf-8" />
+
+	<style type="text/css">
+		/* General Styles*/
+
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		nav {
+			background-color: lightgrey;
+			overflow: hidden;
+			border: 1px solid #777;
+		}
+
+		#wrapper {
+			margin: 0 auto;
+			width: 80%;
+			max-width: 950px;
+		}
+
+		header {
+			height: 100px;
+			background-color: teal;
+			border: 1px solid #777;
+		}
+
+		section {
+			clear: both;
+		}
+
+		article {
+			padding: 100px 15px 15px 400px;
+			border-width: 0 1px 1px;
+			border-color: #777;
+			border-style: solid;
+		}
+		/* End ofGeneral Styles*/
+
+		#neato {
+			border-width: 0 1px;
+			border-color: #777;
+			border-style: solid;
+			overflow: hidden;
+		}
+
+		#neato div {
+			width: 60px;
+			height: 30px;
+			float: left;
+			background-color: orange;
+			-webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-out;
+			-moz-transition: background-color .2s ease-in-out, -moz-transform .2s ease-out;
+			-o-transition: background-color .2s ease-in-out, -o-transform .2s ease-out;
+			transition: background-color .2s ease-in-out, transform .2s ease-out;
+		}
+
+		#neato div:hover {
+			background-color: blue;
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		nav a {
+			/* <a> general styles*/
+			display: block;
+			height: 30px;
+			padding: 7px 15px 0;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+			font-family: sans-serif;
+			white-space: nowrap;
+			float: left;
+			color: white;
+			background-color: lightgrey;
+			font-size: 1em;
+			/* End of <a> general styles*/
+			-webkit-transition: background-color .5s ease-out, color .5s ease-out, padding .25s ease-out;
+			-moz-transition: background-color .5s ease-out, color .5s ease-out, padding .25s ease-out;
+			-o-transition: background-color .5s ease-out, color .5s ease-out, padding .25s ease-out;
+			transition: background-color .5s ease-out, color .5s ease-out, padding .25s ease-out;
+		}
+
+		nav a:hover {
+			color: black;
+			background-color: yellow;
+			padding: 7px 40px 0;
+		}
+
+		.blowupimage {
+			-webkit-transition: -webkit-transform 2s ease-out;
+			-moz-transition: -moz-transform 2s ease-out;
+			-o-transition: -o-transform 2s ease-out;
+			transition: transform 2s ease-out;
+			-webkit-transform-origin: 100% 100%;
+			-moz-transform-origin: 100% 100%;
+			-ms-transform-origin: 100% 100%;
+			-o-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+		}
+
+		.blowupimage:hover {
+			-webkit-transform: scale(2);
+			-moz-transform: scale(2);
+			-ms-transform: scale(2);
+			-o-transform: scale(2);
+			transform: scale(2);
+			-webkit-transform-origin: 100% 100%;
+			-moz-transform-origin: 100% 100%;
+			-ms-transform-origin: 100% 100%;
+			-o-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Just a Header</h1></header>
+
+		<nav>
+			<a href="#">HOME</a>
+			<a href="#">ABOUT US</a>
+			<a href="#">PRODUCTS</a>
+			<a href="#">CONTACT</a>
+		</nav>
+
+		<div id="neato">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<section>
+			<article>
+				<img class="blowupimage" src="copter.jpg" alt="Image of Gyrocopter" />
+			</article>
+		</section>
+	</div>
+</body>
+
+</html>
