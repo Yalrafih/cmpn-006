@@ -1,0 +1,29 @@
+body {
+min-width: 400px;
+}
+
+/* Begin mobile styles */
+@media screen and (max-width: 768px) {
+	#desktopHead {
+		display: none;
+	}
+	
+	section#contentarea  > article::after{
+		content: 'This is a small screen';
+	}
+}
+/* End mobile styles */
+
+
+/* Begin desktop styles */
+@media screen and (min-width: 769px) {
+	#mobileHead {
+		display:none;
+	}
+
+	section#contentarea  > article::after{
+		content: 'This is a large screen';
+	}
+
+}
+/* End desktop styles */

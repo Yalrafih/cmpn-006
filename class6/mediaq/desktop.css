@@ -1,0 +1,30 @@
+#contentarea {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 950px;
+	overflow: auto;
+}
+
+#centerheader {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 950px;
+}
+
+header,  header img{
+	width: 100%;
+	max-width: 950px;
+}
+
+#mobhead {
+	display:none;
+}
+
+/*****************************************************
+MENU
+******************************************************/
+nav > a {
+	width: 13%;
+	display: inline-block;
+}

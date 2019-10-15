@@ -1,0 +1,17 @@
+#reghead {
+	display: none;
+}
+
+#mobhead {
+	background-color: #039;
+}
+
+article, nav, footer {
+	min-width:500px;
+	width: 100%;
+}
+
+nav > a {
+	width: 100%;
+	display: block;
+}

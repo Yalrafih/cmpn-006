@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background-color: #000;
+	background: -webkit-linear-gradient(#039, #000);
+	background: linear-gradient(#039, #000);
+}
+
+p {
+	padding: 0 0 1.25em 0;
+}
+
+footer {
+	background-color: #fff;
+	font-size: 0.6em;
+	clear: both;
+}
+
+footer, nav {
+	width: 90%;
+	max-width: 950px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+nav {
+	background-color: #000;
+	overflow: hidden;
+}
+
+nav > a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 0;
+	background-color: #000;
+}
+
+nav > a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+nav > a:active {
+	background-color: #fff;
+	color: #f00;
+}
+
+article {
+	background-color: #fff;
+	float: left;
+	width: 72%;
+	color: #555;
+	text-align: left;
+	padding: 1% 1% 0 2%;
+}

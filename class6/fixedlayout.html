@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Layout Example</title>
+	
+	<style type="text/css">
+	* {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	header {
+		width: 100%;
+		height: 115px;
+		text-align: center;
+	}
+	
+	section {
+		margin: 0 auto;
+		width: 950px;
+	}
+	
+	article {
+		background-color: #d0dce2;
+	}
+	
+	.leftcolumn {
+		width: 200px;
+		background-color: #e2d0d0;
+	}
+	
+	.rightcolumn {
+		width: 200px;
+		background-color: #b7d1af;
+	}
+	
+	footer {
+		width: 100%;
+		text-align: center;
+		clear: both;
+	}
+	
+	.floatleft {
+		float: left;
+	}
+	
+	.floatright {
+		float: right;
+	}
+	
+	p {
+		padding: 0 0 2em 0;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Header for Website</h1>
+	</header>
+	
+	<section>
+		<aside class="leftcolumn floatleft">
+		<p>Left floater with some text.</p>
+		
+		<p>More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like.</p>
+		</aside>
+		
+		<aside class="rightcolumn floatright">
+		<p>Right floater with some text here.</p>
+		
+		<p>More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like. More text to show what the aside would look like.</p>
+		</aside>
+		
+		<article>
+		<p>This is some text in the article section.</p>
+		
+		<p>More text to show what the aside would look like. </p>
+		</article>
+	</section>
+	
+	<footer>
+	This is text in the footer area.
+	</footer>
+</body>
+</html>
